@@ -22,7 +22,9 @@ connection.connect((err) => {
 });
 
 connection.query('SELECT 1', function (error, results, fields) {
-  if (error) throw error;
+  if (error) {
+    throw error;
+  }
   // connected!
 });
 
